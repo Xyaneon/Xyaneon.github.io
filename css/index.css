@@ -94,12 +94,12 @@ h1, p {
 
 /* About Me */
 
-#aboutme, #resumebody {
+#aboutme, #bugfixes, #resumebody {
 	display: none;
 	color: #aaaaaa;
 }
 
-#aboutme p, #resumebody p {
+#aboutme p, #bugfixes p, #resumebody p {
 	color: #aaaaaa;
 	text-align: left;
 }

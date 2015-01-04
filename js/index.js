@@ -49,6 +49,7 @@ $(document).ready(function(){
 			$("#projectsheader").fadeOut(slidespeed);
 			$("#resumebody").slideUp(slidespeed);
 			$("#aboutme").slideUp(slidespeed);
+			$("#bugfixes").slideUp(slidespeed);
 			$("#backbutton").slideUp(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
@@ -65,6 +66,18 @@ $(document).ready(function(){
 			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 			$("#aboutme").delay(slidespeed * 2).slideDown(slidespeed);
 			changeSiteLocation(" About Me", slidespeed);
+		}
+	);
+	$("#bugfixesbutton").click(
+		function() {
+			$("#homescreen").fadeOut(slidespeed);
+			$("#mainstart").fadeOut(slidespeed);
+			$(".projectbox").slideUp(slidespeed);
+			$("#resumebody").slideUp(slidespeed);
+			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
+			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
+			$("#bugfixes").delay(slidespeed * 2).slideDown(slidespeed);
+			changeSiteLocation(" Bug Fixes", slidespeed);
 		}
 	);
 	$("#resumebutton").click(
