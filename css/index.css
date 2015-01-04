@@ -99,16 +99,17 @@ h1, p {
 	color: #aaaaaa;
 }
 
-#aboutme p, #bugfixes p, #resumebody p {
+#aboutme p, #bugfixes p, #bugfixes h2, #bugfixes ul, #bugfixes li {
 	color: #aaaaaa;
 	text-align: left;
 }
 
 #resumebody p {
+	color: #aaaaaa;
 	text-align: center;
 }
 
-#aboutme h1, #aboutme h2, #resumebody h1, #resumebody h2 {
+#aboutme h1, #aboutme h2, #bugfixes h1, #resumebody h1, #resumebody h2 {
 	color: #aaaaaa;
 	text-align: center;
 }
