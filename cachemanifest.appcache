@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#Last modified: December 28, 2014 10:20 PM
+#Last modified: January 4, 2015 1:02 AM
 
 CACHE:
 index.html
@@ -10,6 +10,7 @@ images/AzureWave.png
 images/AzureWaveVerticalFadeOut-fs8.png
 images/Blogger_button.png
 images/buttons/about.svg
+images/buttons/bug.svg
 images/buttons/projects.svg
 images/buttons/resume.svg
 images/error.svg
