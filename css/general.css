@@ -78,6 +78,11 @@ ul, ol, li {
 	top: -64px;
 	height: 64px;
 	z-index: 100;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 #navbar-right {
@@ -90,6 +95,11 @@ ul, ol, li {
 	top: -32px;
 	height: 32px;
 	z-index: 99;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 #navbar > div {
@@ -220,4 +230,9 @@ ul, ol, li {
 	color: rgb(170, 170, 170);
 	text-align: center;
 	display: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }

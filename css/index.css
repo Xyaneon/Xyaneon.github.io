@@ -17,6 +17,14 @@
 	max-width: 700px;
 }
 
+#homescreen {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
 h1, p {
 	color: #aaaaaa;
 	text-align: center;
@@ -94,6 +102,11 @@ h1, p {
 	transition-property: background, color, box-shadow;
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 #backbutton:hover {
