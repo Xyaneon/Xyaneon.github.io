@@ -87,7 +87,7 @@ ul, ol, li {
 	left: 0px;
 	top: -64px;
 	height: 64px;
-	z-index: 100;
+	z-index: 101;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -123,6 +123,11 @@ ul, ol, li {
 
 #navbar-left, #navbar-right {
 	background-color: #000000;
+	-webkit-filter: drop-shadow(0px 0px 5px black);
+	-moz-filter: drop-shadow(0px 0px 5px black);
+	-ms-filter: drop-shadow(0px 0px 5px black);
+	-o-filter: drop-shadow(0px 0px 5px black);
+	filter: drop-shadow(0px 0px 5px black);
 }
 
 #navbar-center {
@@ -131,6 +136,12 @@ ul, ol, li {
 	background: url(../images/navbar_curve.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+	z-index: 100;
+	-webkit-filter: drop-shadow(-5px 0px 5px black);
+	-moz-filter: drop-shadow(-5px 0px 5px black);
+	-ms-filter: drop-shadow(-5px 0px 5px black);
+	-o-filter: drop-shadow(-5px 0px 5px black);
+	filter: drop-shadow(-5px 0px 5px black);
 }
 
 #navbar-right {
@@ -219,7 +230,7 @@ ul, ol, li {
 	float: left;
 	color: #aaaaaa;
 	line-height: 65px;
-	margin: 0px auto 0px 0px;
+	margin: 0px 15px 0px 0px;
 	padding: 0px;
 	padding-left: 5px;
 	white-space: nowrap;
@@ -245,4 +256,9 @@ ul, ol, li {
 	-moz-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+	-webkit-filter: drop-shadow(0px 0px 5px black);
+	-moz-filter: drop-shadow(0px 0px 5px black);
+	-ms-filter: drop-shadow(0px 0px 5px black);
+	-o-filter: drop-shadow(0px 0px 5px black);
+	filter: drop-shadow(0px 0px 5px black);
 }
