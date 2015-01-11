@@ -6,6 +6,14 @@ function changeSiteLocation(new_text, s_speed) {
 	$("#sitelocation").delay(s_speed).animate({width: 'toggle'}, {duration: s_speed});
 }
 
+function prepareForSection() {
+	var slidespeed = 200;
+	$("#homescreen").fadeOut(slidespeed);
+	$("#mainstart").fadeOut(slidespeed);
+	$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
+	$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
+}
+
 $(document).ready(function(){
 	var slidespeed = 200;
 	var loadinspeed = 400;
@@ -45,6 +53,9 @@ $(document).ready(function(){
 	);
 	$("#backbutton").click(
 		function() {
+			$(".projectbox").each(function() {
+				$(this).children(".projectboxcontents").slideUp(slidespeed);
+			});
 			$(".projectbox").slideUp(slidespeed);
 			$("#projectsheader").fadeOut(slidespeed);
 			$("#resumebody").slideUp(slidespeed);
@@ -59,12 +70,7 @@ $(document).ready(function(){
 	);
 	$("#aboutmebutton").click(
 		function() {
-			$("#homescreen").fadeOut(slidespeed);
-			$("#mainstart").fadeOut(slidespeed);
-			$(".projectbox").slideUp(slidespeed);
-			$("#resumebody").slideUp(slidespeed);
-			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
-			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
+			prepareForSection();
 			$("#aboutme").delay(slidespeed * 2).slideDown(slidespeed);
 			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" About Me", slidespeed);
@@ -72,12 +78,7 @@ $(document).ready(function(){
 	);
 	$("#bugfixesbutton").click(
 		function() {
-			$("#homescreen").fadeOut(slidespeed);
-			$("#mainstart").fadeOut(slidespeed);
-			$(".projectbox").slideUp(slidespeed);
-			$("#resumebody").slideUp(slidespeed);
-			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
-			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
+			prepareForSection();
 			$("#bugfixes").delay(slidespeed * 2).slideDown(slidespeed);
 			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" Bug Fixes", slidespeed);
@@ -85,12 +86,7 @@ $(document).ready(function(){
 	);
 	$("#resumebutton").click(
 		function() {
-			$("#homescreen").fadeOut(slidespeed);
-			$("#mainstart").fadeOut(slidespeed);
-			$("#aboutme").slideUp(slidespeed);
-			$(".projectbox").slideUp(slidespeed);
-			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
-			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
+			prepareForSection();
 			$("#resumebody").delay(slidespeed * 2).slideDown(slidespeed);
 			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" Résumé", slidespeed);
@@ -98,12 +94,7 @@ $(document).ready(function(){
 	);
 	$("#personalprojectsbutton").click(
 		function() {
-			$("#homescreen").fadeOut(slidespeed);
-			$("#mainstart").fadeOut(slidespeed);
-			$("#aboutme").slideUp(slidespeed);
-			$("#resumebody").slideUp(slidespeed);
-			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
-			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
+			prepareForSection();
 			$(".projectbox").delay(slidespeed * 2).slideDown(slidespeed);
 			$("#projectsheader").delay(slidespeed * 2).slideDown(slidespeed);
 			document.getElementsByTagName('body')[0].style.overflow='auto';
