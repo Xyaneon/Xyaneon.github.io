@@ -53,6 +53,7 @@ $(document).ready(function(){
 			$("#backbutton").slideUp(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
+			document.getElementsByTagName('body')[0].style.overflow='hidden';
 			changeSiteLocation(" Home", slidespeed);
 		}
 	);
@@ -65,6 +66,7 @@ $(document).ready(function(){
 			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
 			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 			$("#aboutme").delay(slidespeed * 2).slideDown(slidespeed);
+			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" About Me", slidespeed);
 		}
 	);
@@ -77,6 +79,7 @@ $(document).ready(function(){
 			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
 			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 			$("#bugfixes").delay(slidespeed * 2).slideDown(slidespeed);
+			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" Bug Fixes", slidespeed);
 		}
 	);
@@ -89,6 +92,7 @@ $(document).ready(function(){
 			$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
 			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 			$("#resumebody").delay(slidespeed * 2).slideDown(slidespeed);
+			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" Résumé", slidespeed);
 		}
 	);
@@ -102,6 +106,7 @@ $(document).ready(function(){
 			$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 			$(".projectbox").delay(slidespeed * 2).slideDown(slidespeed);
 			$("#projectsheader").delay(slidespeed * 2).slideDown(slidespeed);
+			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" Personal Projects", slidespeed);
 		}
 	);
