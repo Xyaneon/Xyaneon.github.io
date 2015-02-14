@@ -22,6 +22,11 @@
 	src: url(../fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf);
 }
 
+@font-face {
+	font-family: Ubuntu Mono;
+	src: url(../fonts/ubuntu-font-family-0.80/UbuntuMono-R.ttf);
+}
+
 * {
 	font-family: Ubuntu, sans-serif;
 }
@@ -83,6 +88,10 @@ a:hover {
 
 ul, ol, li {
 	color: #aaaaaa;
+}
+
+code {
+	font-family: Ubuntu Mono, monospace;
 }
 
 #navbar {

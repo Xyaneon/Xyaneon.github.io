@@ -120,14 +120,14 @@ h1, p {
 	box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.8);
 }
 
-/* About Me */
+/* Some formatting for specific sections */
 
-#aboutme, #bugfixes, #resumebody {
+#aboutme, #bugfixes, #links, #resumebody {
 	display: none;
 	color: #aaaaaa;
 }
 
-#aboutme p, #bugfixes p, #bugfixes h2, #bugfixes ul, #bugfixes li {
+#aboutme p, #bugfixes p, #bugfixes h2, #bugfixes ul, #bugfixes li, #links p, #links h2, #links ul, #links li {
 	color: #aaaaaa;
 	text-align: left;
 }
@@ -137,9 +137,13 @@ h1, p {
 	text-align: center;
 }
 
-#aboutme h1, #aboutme h2, #bugfixes h1, #resumebody h1, #resumebody h2 {
+#aboutme h1, #aboutme h2, #bugfixes h1, #links h1, #resumebody h1, #resumebody h2 {
 	color: #aaaaaa;
 	text-align: center;
+}
+
+#bugfixes li, #links li {
+	margin: 0 0 0.5em 0;
 }
 
 /* Personal Projects */
