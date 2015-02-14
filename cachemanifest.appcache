@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#Last modified: February 11, 2015 6:49 PM
+#Last modified: February 13, 2015 11:25 PM
 
 CACHE:
 index.html
@@ -11,6 +11,7 @@ images/AzureWaveVerticalFadeOut-fs8.png
 images/Blogger_button.png
 images/buttons/about.svg
 images/buttons/bug.svg
+images/buttons/links.svg
 images/buttons/projects.svg
 images/buttons/resume.svg
 images/error.svg
@@ -26,6 +27,7 @@ fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf
 fonts/ubuntu-font-family-0.80/Ubuntu-B.ttf
 fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf
 fonts/ubuntu-font-family-0.80/Ubuntu-RI.ttf
+fonts/ubuntu-font-family-0.80/UbuntuMono-R.ttf
 js/index.js
 js/updatecache.js
 

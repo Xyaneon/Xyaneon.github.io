@@ -61,6 +61,7 @@ $(document).ready(function(){
 			$("#resumebody").slideUp(slidespeed);
 			$("#aboutme").slideUp(slidespeed);
 			$("#bugfixes").slideUp(slidespeed);
+			$("#links").slideUp(slidespeed);
 			$("#backbutton").slideUp(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
@@ -82,6 +83,14 @@ $(document).ready(function(){
 			$("#bugfixes").delay(slidespeed * 2).slideDown(slidespeed);
 			document.getElementsByTagName('body')[0].style.overflow='auto';
 			changeSiteLocation(" Bug Fixes", slidespeed);
+		}
+	);
+	$("#linksbutton").click(
+		function() {
+			prepareForSection();
+			$("#links").delay(slidespeed * 2).slideDown(slidespeed);
+			document.getElementsByTagName('body')[0].style.overflow='auto';
+			changeSiteLocation(" Links", slidespeed);
 		}
 	);
 	$("#resumebutton").click(
