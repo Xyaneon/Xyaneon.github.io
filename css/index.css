@@ -94,6 +94,29 @@ h1, p {
 
 #mainbuttons {
 	overflow: auto;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 1em;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5) inset;
+}
+
+.categoryheader {
+	background: none;
+	border-radius: 0.25em;
+	text-align: left;
+	font-family: Ubuntu Light, sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	width: 100%;
+	padding: 0.25em;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	transition-property: background;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.categoryheader:hover {
+	background: rgba(255, 255, 255, 0.25);
 }
 
 #backbutton {
