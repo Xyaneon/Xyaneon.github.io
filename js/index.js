@@ -14,11 +14,13 @@ function prepareForSection() {
 	$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 }
 
-function toggleCategory(target_category_id, slidespeed) {
+function toggleCategory(target_chevron, target_category_id, slidespeed) {
 	$(".categorybuttons").not(target_category_id).each(function() {
 		$(this).slideUp(slidespeed);
+		$(this).children(".categorychevron").removeClass("rotated");
 	});
 	$(target_category_id).slideToggle(slidespeed);
+	$(target_chevron).toggleClass("rotated");
 }
 
 $(document).ready(function(){
@@ -62,17 +64,17 @@ $(document).ready(function(){
 	// Category headers actions
 	$("#sectionscategory").click(
 		function() {
-			toggleCategory("#sectionsbuttons", slidespeed);
+			toggleCategory($(this).children(".categorychevron"), "#sectionsbuttons", slidespeed);
 		}
 	);
 	$("#linkscategory").click(
 		function() {
-			toggleCategory("#linksbuttons", slidespeed);
+			toggleCategory($(this).children(".categorychevron"), "#linksbuttons", slidespeed);
 		}
 	);
 	$("#projectscategory").click(
 		function() {
-			toggleCategory("#projectsbuttons", slidespeed);
+			toggleCategory($(this).children(".categorychevron"), "#projectsbuttons", slidespeed);
 		}
 	);
 	
