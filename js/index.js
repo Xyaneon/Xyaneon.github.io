@@ -31,36 +31,6 @@ $(document).ready(function(){
 	$("#attribution").slideDown(loadinspeed);
 	$("#homescreen").delay(loadinspeed).fadeIn(loadinspeed)
 	
-	$("#blogbutton").hover(
-		function() {
-			$("#hlrpsb").slideDown(slidespeed);
-		},
-		function () {}
-	);
-	$("#youtubebutton").hover(
-		function() {
-			$("#hlrpsb").slideUp(slidespeed);
-		},
-		function () {}
-	);
-	$("#googleplusbutton").hover(
-		function() {
-			$("#hlrpsb").slideUp(slidespeed);
-		},
-		function () {}
-	);
-	$("#githubbutton").hover(
-		function() {
-			$("#hlrpsb").slideUp(slidespeed);
-		},
-		function () {}
-	);
-	$("#hlrpsb").mouseleave(
-		function() {
-			$("#hlrpsb").slideUp(slidespeed);
-		}
-	);
-	
 	// Category headers actions
 	$("#sectionscategory").click(
 		function() {
@@ -75,6 +45,11 @@ $(document).ready(function(){
 	$("#projectscategory").click(
 		function() {
 			toggleCategory($(this).children(".categorychevron"), "#projectsbuttons", slidespeed);
+		}
+	);
+	$("#profilescategory").click(
+		function() {
+			toggleCategory($(this).children(".categorychevron"), "#profilesbuttons", slidespeed);
 		}
 	);
 	
