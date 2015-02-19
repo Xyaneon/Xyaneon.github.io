@@ -23,6 +23,14 @@ function toggleCategory(target_chevron, target_category_id, slidespeed) {
 	$(target_chevron).toggleClass("rotated");
 }
 
+function disableScroll() {
+	document.getElementsByTagName('body')[0].style.overflow='hidden';
+}
+
+function enableScroll() {
+	document.getElementsByTagName('body')[0].style.overflow='auto';
+}
+
 $(document).ready(function(){
 	var slidespeed = 200;
 	var loadinspeed = 400;
@@ -68,7 +76,7 @@ $(document).ready(function(){
 			$("#backbutton").slideUp(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
-			document.getElementsByTagName('body')[0].style.overflow='hidden';
+			//disableScroll();
 			changeSiteLocation(" Home", slidespeed);
 		}
 	);
@@ -76,7 +84,7 @@ $(document).ready(function(){
 		function() {
 			prepareForSection();
 			$("#aboutme").delay(slidespeed * 2).slideDown(slidespeed);
-			document.getElementsByTagName('body')[0].style.overflow='auto';
+			//enableScroll();
 			changeSiteLocation(" About Me", slidespeed);
 		}
 	);
@@ -84,7 +92,7 @@ $(document).ready(function(){
 		function() {
 			prepareForSection();
 			$("#bugfixes").delay(slidespeed * 2).slideDown(slidespeed);
-			document.getElementsByTagName('body')[0].style.overflow='auto';
+			//enableScroll();
 			changeSiteLocation(" Bug Fixes", slidespeed);
 		}
 	);
@@ -92,7 +100,7 @@ $(document).ready(function(){
 		function() {
 			prepareForSection();
 			$("#links").delay(slidespeed * 2).slideDown(slidespeed);
-			document.getElementsByTagName('body')[0].style.overflow='auto';
+			//enableScroll();
 			changeSiteLocation(" Links", slidespeed);
 		}
 	);
@@ -100,7 +108,7 @@ $(document).ready(function(){
 		function() {
 			prepareForSection();
 			$("#resumebody").delay(slidespeed * 2).slideDown(slidespeed);
-			document.getElementsByTagName('body')[0].style.overflow='auto';
+			//enableScroll();
 			changeSiteLocation(" Résumé", slidespeed);
 		}
 	);
@@ -109,7 +117,7 @@ $(document).ready(function(){
 			prepareForSection();
 			$(".projectbox").delay(slidespeed * 2).slideDown(slidespeed);
 			$("#projectsheader").delay(slidespeed * 2).slideDown(slidespeed);
-			document.getElementsByTagName('body')[0].style.overflow='auto';
+			//enableScroll();
 			changeSiteLocation(" Personal Projects", slidespeed);
 		}
 	);
