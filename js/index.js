@@ -51,6 +51,34 @@ $(document).ready(function(){
 			$("#hlrpsb").slideUp(slidespeed);
 		}
 	);
+	
+	// Category headers actions
+	$("#sectionscategory").click(
+		function() {
+			$(".categorybuttons").not("#sectionsbuttons").each(function() {
+				$(this).slideUp(slidespeed);
+			});
+			$("#sectionsbuttons").slideToggle(slidespeed);
+		}
+	);
+	$("#linkscategory").click(
+		function() {
+			$(".categorybuttons").not("#linksbuttons").each(function() {
+				$(this).slideUp(slidespeed);
+			});
+			$("#linksbuttons").slideToggle(slidespeed);
+		}
+	);
+	$("#projectscategory").click(
+		function() {
+			$(".categorybuttons").not("#projectsbuttons").each(function() {
+				$(this).slideUp(slidespeed);
+			});
+			$("#projectsbuttons").slideToggle(slidespeed);
+		}
+	);
+	
+	// Buttons actions
 	$("#backbutton").click(
 		function() {
 			$(".projectbox").each(function() {
