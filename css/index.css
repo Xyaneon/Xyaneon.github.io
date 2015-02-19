@@ -135,6 +135,14 @@ img.categorychevron {
 	filter: drop-shadow(0px 0px 3px black);
 }
 
+.rotated {
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
 #backbutton {
 	display: none;
 	color: #aaaaaa;
