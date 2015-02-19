@@ -14,6 +14,13 @@ function prepareForSection() {
 	$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 }
 
+function toggleCategory(target_category_id, slidespeed) {
+	$(".categorybuttons").not(target_category_id).each(function() {
+		$(this).slideUp(slidespeed);
+	});
+	$(target_category_id).slideToggle(slidespeed);
+}
+
 $(document).ready(function(){
 	var slidespeed = 200;
 	var loadinspeed = 400;
@@ -55,26 +62,17 @@ $(document).ready(function(){
 	// Category headers actions
 	$("#sectionscategory").click(
 		function() {
-			$(".categorybuttons").not("#sectionsbuttons").each(function() {
-				$(this).slideUp(slidespeed);
-			});
-			$("#sectionsbuttons").slideToggle(slidespeed);
+			toggleCategory("#sectionsbuttons", slidespeed);
 		}
 	);
 	$("#linkscategory").click(
 		function() {
-			$(".categorybuttons").not("#linksbuttons").each(function() {
-				$(this).slideUp(slidespeed);
-			});
-			$("#linksbuttons").slideToggle(slidespeed);
+			toggleCategory("#linksbuttons", slidespeed);
 		}
 	);
 	$("#projectscategory").click(
 		function() {
-			$(".categorybuttons").not("#projectsbuttons").each(function() {
-				$(this).slideUp(slidespeed);
-			});
-			$("#projectsbuttons").slideToggle(slidespeed);
+			toggleCategory("#projectsbuttons", slidespeed);
 		}
 	);
 	
