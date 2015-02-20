@@ -17,8 +17,8 @@ function prepareForSection() {
 function toggleCategory(target_chevron, target_category_id, slidespeed) {
 	$(".categorybuttons").not(target_category_id).each(function() {
 		$(this).slideUp(slidespeed);
-		$(this).children(".categorychevron").removeClass("rotated");
 	});
+	$(".categorychevron").not(target_chevron).removeClass("rotated");
 	$(target_category_id).slideToggle(slidespeed);
 	$(target_chevron).toggleClass("rotated");
 }
