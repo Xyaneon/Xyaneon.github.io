@@ -1,11 +1,12 @@
 CACHE MANIFEST
-#Last modified: February 13, 2015 11:25 PM
+#Last modified: February 26, 2015 6:13 PM
 
 CACHE:
 index.html
 css/index.css
 css/general.css
 css/404.css
+images/askubuntu_profile_icon.png
 images/AzureWave.png
 images/AzureWaveVerticalFadeOut-fs8.png
 images/Blogger_button.png
@@ -14,6 +15,7 @@ images/buttons/bug.svg
 images/buttons/links.svg
 images/buttons/projects.svg
 images/buttons/resume.svg
+images/chevron.svg
 images/error.svg
 images/favicon.png
 images/GitHub-Mark-Light-120px-plus.png
