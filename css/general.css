@@ -34,11 +34,10 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	margin: 0px;
 }
 
 html {
-	margin: 0px;
 	background: #082d56 url(../images/Schefflera_Arboricola_website_background.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;

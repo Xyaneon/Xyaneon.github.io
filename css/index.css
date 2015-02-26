@@ -2,8 +2,8 @@
 
 #mainbody {
 	min-width: 300px;
-	margin: 65px auto 32px auto;
-	padding: 20px 30px 20px 30px;
+	margin: 0px auto 32px auto;
+	padding: 85px 30px 20px 30px;
 }
 
 #mainbox {
@@ -23,6 +23,14 @@
 	-moz-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+}
+
+#homescreen>h1 {
+	color: white;
+	text-shadow: 0px 0px 8px black;
+	font-family: Ubuntu Light, sans-serif;
+	font-weight: normal;
+	font-size: 2.5em;
 }
 
 h1, p {
@@ -92,8 +100,55 @@ h1, p {
 	filter: drop-shadow(0px 0px 3px white);
 }
 
-#mainbuttons {
+.categorybuttons {
 	overflow: auto;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 1em;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5) inset;
+	display: none;
+}
+
+.categoryheader {
+	background: none;
+	border-radius: 0.25em;
+	width: 100%;
+	padding: 0.25em;
+	transition-property: background;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.categoryheader:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.categoryheadertext {
+	text-align: left;
+	font-family: Ubuntu Light, sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	text-shadow: 0px 0px 3px black;
+	color: white;
+}
+
+img.categorychevron {
+	width: 1.5em;
+	height: 1.5em;
+	float: left;
+	margin-top: 0.5em;
+	-webkit-filter: drop-shadow(0px 0px 2px black);
+	-moz-filter: drop-shadow(0px 0px 2px black);
+	-ms-filter: drop-shadow(0px 0px 2px black);
+	-o-filter: drop-shadow(0px 0px 2px black);
+	filter: drop-shadow(0px 0px 2px black);
+}
+
+.rotated {
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 #backbutton {
@@ -156,15 +211,6 @@ h1, p {
 	display: none;
 }
 
-div.projectbox {
-	background: rgba(0, 0, 0, 0.8);
-	border-radius: 16px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-	padding: 20px 70px 20px 70px;
-	margin: 10px auto 10px auto;
-	max-width: 700px;
-}
-
 div.picture {
 	float: left;
 	height: 100%;
@@ -185,8 +231,8 @@ h1, h2, p {
 	color: #aaaaaa;
 }
 
-div.projectboxcontents {
-	display: none;
+div.description h2 {
+	text-align: left;
 }
 
 #backgroundthumbnail {
@@ -195,20 +241,7 @@ div.projectboxcontents {
 	border-radius: 8px;
 }
 
-/* Recent blog posts widget styling */
-
-#hlrpsb {
-	z-index: 50;
-	float: right;
-	background-color: #000000;
-	border-radius: 0px 0px 16px 16px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-	display: none;
-	padding: 20px;
-	position: absolute;
-	top: 32px;
-	right: 0px;
-}
+/* Navbar items */
 
 .navbaritem img {
 	height: 32px;
@@ -223,13 +256,4 @@ div.projectboxcontents {
 
 .navbaritem:hover img {
 	opacity: 1.0;
-}
-
-.bbrecpost2 {
-	padding-bottom:6px;
-}
-
-#blogwidgetlink {
-	text-align: right;
-	opacity:0.5;
 }
