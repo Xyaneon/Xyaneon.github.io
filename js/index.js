@@ -6,6 +6,10 @@ function changeSiteLocation(new_text, s_speed) {
 	$("#sitelocation").delay(s_speed).animate({width: 'toggle'}, {duration: s_speed});
 }
 
+function changeSiteLocationToProject(new_text, s_speed) {
+	changeSiteLocation(" Projects / " + new_text, s_speed);
+}
+
 function prepareForSection() {
 	var slidespeed = 200;
 	$("#homescreen").fadeOut(slidespeed);
@@ -14,7 +18,22 @@ function prepareForSection() {
 	$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 }
 
-function toggleCategory(target_chevron, target_category_id, slidespeed) {
+function openSection(section_id, section_name) {
+	var slidespeed = 200;
+	prepareForSection();
+	$(section_id).delay(slidespeed * 2).slideDown(slidespeed);
+	changeSiteLocationToProject(" " + section_name, slidespeed);
+}
+
+function openProjectButton(project_box_id, project_name) {
+	var slidespeed = 200;
+	prepareForSection();
+	$(project_box_id).delay(slidespeed * 2).slideDown(slidespeed);
+	changeSiteLocationToProject(project_name, slidespeed);
+}
+
+function toggleCategory(target_chevron, target_category_id) {
+	var slidespeed = 200;
 	$(".categorybuttons").not(target_category_id).each(function() {
 		$(this).slideUp(slidespeed);
 	});
@@ -23,6 +42,7 @@ function toggleCategory(target_chevron, target_category_id, slidespeed) {
 	$(target_chevron).toggleClass("rotated");
 }
 
+/*
 function disableScroll() {
 	document.getElementsByTagName('body')[0].style.overflow='hidden';
 }
@@ -30,6 +50,7 @@ function disableScroll() {
 function enableScroll() {
 	document.getElementsByTagName('body')[0].style.overflow='auto';
 }
+*/
 
 $(document).ready(function(){
 	var slidespeed = 200;
@@ -42,31 +63,28 @@ $(document).ready(function(){
 	// Category headers actions
 	$("#sectionscategory").click(
 		function() {
-			toggleCategory($(this).children(".categorychevron"), "#sectionsbuttons", slidespeed);
+			toggleCategory($(this).children(".categorychevron"), "#sectionsbuttons");
 		}
 	);
 	$("#linkscategory").click(
 		function() {
-			toggleCategory($(this).children(".categorychevron"), "#linksbuttons", slidespeed);
+			toggleCategory($(this).children(".categorychevron"), "#linksbuttons");
 		}
 	);
 	$("#projectscategory").click(
 		function() {
-			toggleCategory($(this).children(".categorychevron"), "#projectsbuttons", slidespeed);
+			toggleCategory($(this).children(".categorychevron"), "#projectsbuttons");
 		}
 	);
 	$("#profilescategory").click(
 		function() {
-			toggleCategory($(this).children(".categorychevron"), "#profilesbuttons", slidespeed);
+			toggleCategory($(this).children(".categorychevron"), "#profilesbuttons");
 		}
 	);
 	
 	// Buttons actions
 	$("#backbutton").click(
 		function() {
-			$(".projectbox").each(function() {
-				$(this).children(".projectboxcontents").slideUp(slidespeed);
-			});
 			$(".projectbox").slideUp(slidespeed);
 			$("#projectsheader").fadeOut(slidespeed);
 			$("#resumebody").slideUp(slidespeed);
@@ -76,57 +94,49 @@ $(document).ready(function(){
 			$("#backbutton").slideUp(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
-			//disableScroll();
 			changeSiteLocation(" Home", slidespeed);
 		}
 	);
 	$("#aboutmebutton").click(
 		function() {
-			prepareForSection();
-			$("#aboutme").delay(slidespeed * 2).slideDown(slidespeed);
-			//enableScroll();
-			changeSiteLocation(" About Me", slidespeed);
+			openSection("#aboutme", "About Me");
 		}
 	);
 	$("#bugfixesbutton").click(
 		function() {
-			prepareForSection();
-			$("#bugfixes").delay(slidespeed * 2).slideDown(slidespeed);
-			//enableScroll();
-			changeSiteLocation(" Bug Fixes", slidespeed);
+			openSection("#bugfixes", "Bug Fixes");
 		}
 	);
 	$("#linksbutton").click(
 		function() {
-			prepareForSection();
-			$("#links").delay(slidespeed * 2).slideDown(slidespeed);
-			//enableScroll();
-			changeSiteLocation(" Links", slidespeed);
+			openSection("#links", "Links");
 		}
 	);
 	$("#resumebutton").click(
 		function() {
-			prepareForSection();
-			$("#resumebody").delay(slidespeed * 2).slideDown(slidespeed);
-			//enableScroll();
-			changeSiteLocation(" Résumé", slidespeed);
+			openSection("#resumebody", "Résumé");
 		}
 	);
-	$("#personalprojectsbutton").click(
+	
+	$(".projectbutton").click(
 		function() {
-			prepareForSection();
-			$(".projectbox").delay(slidespeed * 2).slideDown(slidespeed);
-			$("#projectsheader").delay(slidespeed * 2).slideDown(slidespeed);
-			//enableScroll();
-			changeSiteLocation(" Personal Projects", slidespeed);
-		}
-	);
-	$(".projectbox").click(
-		function() {
-			$(".projectbox").not(this).each(function() {
-				$(this).children(".projectboxcontents").slideUp(slidespeed);
-			});
-			$(this).children(".projectboxcontents").slideToggle(slidespeed);
+			switch (this.id) {
+				case "websiteprojectbutton":
+					openProjectButton("#websiteprojectbox", "Website");
+					break;
+				case "chocolateypackagesprojectbutton":
+					openProjectButton("#chocolateypackagesprojectbox", "Chocolatey packages");
+					break;
+				case "gxsubosprojectbutton":
+					openProjectButton("#gxsubosprojectbox", "GxSubOS");
+					break;
+				case "grivedaemonprojectbutton":
+					openProjectButton("#grivedaemonprojectbox", "grive-daemon");
+					break;
+				case "mykaryotesprojectbutton":
+					openProjectButton("#mykaryotesprojectbox", "MyKaryotes");
+					break;
+			}
 		}
 	);
 });
