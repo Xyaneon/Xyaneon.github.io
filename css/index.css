@@ -231,6 +231,10 @@ h1, h2, p {
 	color: #aaaaaa;
 }
 
+div.description h2 {
+	text-align: left;
+}
+
 #backgroundthumbnail {
 	width: 50%;
 	height: 50%;
