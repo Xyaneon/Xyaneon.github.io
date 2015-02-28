@@ -22,7 +22,7 @@ function openSection(section_id, section_name) {
 	var slidespeed = 200;
 	prepareForSection();
 	$(section_id).delay(slidespeed * 2).slideDown(slidespeed);
-	changeSiteLocationToProject(" " + section_name, slidespeed);
+	changeSiteLocation(" " + section_name, slidespeed);
 }
 
 function openProjectButton(project_box_id, project_name) {
