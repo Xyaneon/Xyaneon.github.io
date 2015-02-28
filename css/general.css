@@ -206,6 +206,12 @@ code {
 	text-shadow: 0 0 3px white;
 }
 
+@media (max-width: 750px) {
+	#name * {
+		display: none;
+	}
+}
+
 .navbaritem {
 	float: right;
 	color: white;
