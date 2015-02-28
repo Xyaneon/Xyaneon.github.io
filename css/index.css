@@ -17,6 +17,12 @@
 	max-width: 700px;
 }
 
+@media (max-width: 750px) {
+	#mainbox {
+		padding: 15px;
+	}
+}
+
 #homescreen {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -49,7 +55,7 @@ h1, p {
 	border: 1px solid transparent;
 	border-radius: 16px;
 	margin: 5px;
-	padding: 10px;
+	padding: 5px;
 	width: 128px;
 	height: 128px;
 	transition-property: background, border, box-shadow, text-shadow;
