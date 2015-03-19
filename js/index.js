@@ -1,8 +1,12 @@
+function showBackButton(s_speed) {
+	$("#backbutton").delay(s_speed).animate({width: 'toggle'}, {duration: s_speed});
+}
+
 function prepareForSection() {
 	var slidespeed = 200;
 	$("#homescreen").fadeOut(slidespeed);
 	$("#mainstart").fadeOut(slidespeed);
-	$("#backbutton").delay(slidespeed).fadeIn(slidespeed);
+	showBackButton(slidespeed);
 	$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 }
 
@@ -41,6 +45,7 @@ function enableScroll() {
 $(document).ready(function(){
 	var slidespeed = 200;
 	var loadinspeed = 400;
+	$("#backbutton").animate({width: 'toggle'}, {duration: 0});
 	$("#navbar-right").animate({"top" : "0px"}, loadinspeed);
 	$("#navbar").delay(loadinspeed / 2.0).animate({"top" : "0px"}, loadinspeed);
 	$("#attribution").slideDown(loadinspeed);
@@ -77,7 +82,7 @@ $(document).ready(function(){
 			$("#aboutme").slideUp(slidespeed);
 			$("#bugfixes").slideUp(slidespeed);
 			$("#links").slideUp(slidespeed);
-			$("#backbutton").slideUp(slidespeed);
+			showBackButton(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
 		}
