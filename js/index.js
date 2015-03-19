@@ -1,15 +1,3 @@
-function changeSiteLocation(new_text, s_speed) {
-	$("#sitelocation").animate({width: 'toggle'}, {duration: s_speed});
-	setTimeout(function(){
-		$("#sitelocation").text(new_text);
-	}, s_speed);
-	$("#sitelocation").delay(s_speed).animate({width: 'toggle'}, {duration: s_speed});
-}
-
-function changeSiteLocationToProject(new_text, s_speed) {
-	changeSiteLocation(" Projects / " + new_text, s_speed);
-}
-
 function prepareForSection() {
 	var slidespeed = 200;
 	$("#homescreen").fadeOut(slidespeed);
@@ -22,14 +10,12 @@ function openSection(section_id, section_name) {
 	var slidespeed = 200;
 	prepareForSection();
 	$(section_id).delay(slidespeed * 2).slideDown(slidespeed);
-	changeSiteLocation(" " + section_name, slidespeed);
 }
 
 function openProjectButton(project_box_id, project_name) {
 	var slidespeed = 200;
 	prepareForSection();
 	$(project_box_id).delay(slidespeed * 2).slideDown(slidespeed);
-	changeSiteLocationToProject(project_name, slidespeed);
 }
 
 function toggleCategory(target_chevron, target_category_id) {
@@ -94,7 +80,6 @@ $(document).ready(function(){
 			$("#backbutton").slideUp(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
-			changeSiteLocation(" Home", slidespeed);
 		}
 	);
 	$("#aboutmebutton").click(
