@@ -50,7 +50,10 @@ $(document).ready(function(){
 	$("#navbar").delay(loadinspeed / 2.0).animate({"top" : "0px"}, loadinspeed);
 	$("#attribution").slideDown(loadinspeed);
 	$("#homescreen").delay(loadinspeed).fadeIn(loadinspeed)
-	
+	$(".categoryheader").each(function(index) {
+		$(this).delay((loadinspeed / 2.0) * index + loadinspeed).fadeIn(loadinspeed * 2.0);
+	});
+
 	// Category headers actions
 	$("#sectionscategory").click(
 		function() {
@@ -72,7 +75,7 @@ $(document).ready(function(){
 			toggleCategory($(this).children(".categorychevron"), "#profilesbuttons");
 		}
 	);
-	
+
 	// Buttons actions
 	$("#backbutton").click(
 		function() {
@@ -107,7 +110,7 @@ $(document).ready(function(){
 			openSection("#resumebody", "Résumé");
 		}
 	);
-	
+
 	$(".projectbutton").click(
 		function() {
 			switch (this.id) {
