@@ -55,12 +55,14 @@ html {
 }
 
 h1 {
-	font-family: Ubuntu, sans-serif;
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 400;
 	color: #405bbf;
 }
 
 h2 {
-	font-family: Ubuntu, sans-serif;
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 400;
 	color: #405bbf;
 }
 
@@ -232,10 +234,10 @@ code {
 	filter: drop-shadow(0px 0px 6px white);
 }
 
-#name, #name h1 {
-	font-family: Ubuntu, sans-serif;
+#name, #name h1, #name h1 a {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 400;
 	font-size: 28px;
-	font-weight: normal;
 	float: left;
 	color: white;
 	line-height: 65px;
