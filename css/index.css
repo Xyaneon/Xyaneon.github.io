@@ -177,6 +177,7 @@ img.categorychevron {
 	-ms-filter: drop-shadow(0px 0px 2px black);
 	-o-filter: drop-shadow(0px 0px 2px black);
 	filter: drop-shadow(0px 0px 2px black);
+	transition: transform 0.2s ease-out 0.0s;
 }
 
 .rotated {
