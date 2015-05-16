@@ -48,7 +48,7 @@ $(document).ready(function(){
 	$("#backbutton").animate({width: 'toggle'}, {duration: 0});
 	$("#navbar-right").animate({"top" : "0px"}, loadinspeed);
 	$("#navbar").delay(loadinspeed / 2.0).animate({"top" : "0px"}, loadinspeed);
-	$("#attribution").slideDown(loadinspeed);
+	$("footer").slideDown(loadinspeed);
 	$("#homescreen").delay(loadinspeed).fadeIn(loadinspeed)
 	$(".categoryheader").each(function(index) {
 		$(this).delay((loadinspeed / 2.0) * index + loadinspeed).fadeIn(loadinspeed * 2.0);
