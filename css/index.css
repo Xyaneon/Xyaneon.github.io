@@ -280,20 +280,3 @@ div.description li {
 	height: 50%;
 	border-radius: 8px;
 }
-
-/* Navbar items */
-
-.navbaritem img {
-	height: 32px;
-	width: 32px;
-	margin-top: 16px;
-	margin-right: 0px;
-	opacity: 0.5;
-	transition-property: opacity;
-	transition-duration: 0.2s;
-	transition-timing-function: linear;
-}
-
-.navbaritem:hover img {
-	opacity: 1.0;
-}
