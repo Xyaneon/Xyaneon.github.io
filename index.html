@@ -27,7 +27,14 @@
 		<header>
 			<div id="navbar">
 				<div id="navbar-left">
-					<img id="mypicture" src="images/me.jpg" alt="My picture" draggable="false"/>
+					<svg id="mypicture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewport="0 0 50 50">
+						<defs>
+							<clipPath id="squircle-clip">
+								<path d="M 25,0 C 5,0 0,5 0,25 0,45 5,50 25,50 45,50 50,45 50,25 50,5 45,0 25,0 Z"/>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#squircle-clip)" height="100%" width="100%" xlink:href="images/me.jpg"/>
+					</svg>
 					<div id="backbutton"><img src="images/back.svg" alt="Back" title="Back" draggable="false"/></div>
 					<div id="name"><h1><a href="http://www.christopherkylehorton.com">Christopher Kyle Horton</a></h1></div>
 				</div>
