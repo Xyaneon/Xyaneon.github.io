@@ -38,9 +38,8 @@ html, body {
 }
 
 html {
-	background: #082d56 url(../images/155887-Schefflera-Aboricola-wallpaper.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: #082d56 url(../images/tile.png);
+	background-repeat: repeat;
 	background-attachment: fixed;
 }
 
