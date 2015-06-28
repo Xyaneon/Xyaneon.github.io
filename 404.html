@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" manifest="cachemanifest.appcache">
 	<head>
+		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 		<!-- We don't support Internet Explorer. -->
 		<!--[if IE]>
 			<meta HTTP-EQUIV="REFRESH" content="0; url=http://warrioring64.github.io/internet_explorer_redirect.html">
@@ -8,8 +9,9 @@
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#000000">
 		<link rel="icon" href="images/favicon.png" />
-		<link type="text/css" rel="stylesheet" href="css/general.css" />
-		<link type="text/css" rel="stylesheet" href="css/404.css" />
+		<link type="text/css" rel="stylesheet" href="css/general.css"/>
+		<link type="text/css" rel="stylesheet" href="css/404.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/updatecache.js"></script>
 		<title>
 			Christopher Kyle Horton / 404 Not Found
@@ -18,11 +20,22 @@
 		<meta name="description" content="Christopher Kyle Horton's personal website.">
 	<head>
 	<body>
-		<div id="navbar">
-			<div id="name">
-				<h1><a href="http://WarriorIng64.github.io/index.html">Christopher Kyle Horton</a><span id="sitelocation"> / 404 Not Found</span></h1>
+		<header id="navbar">
+			<div id="navbar-left">
+				<svg id="mypicture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewport="0 0 50 50">
+					<defs>
+						<clipPath id="squircle-clip">
+							<path d="M 25,0 C 5,0 0,5 0,25 0,45 5,50 25,50 45,50 50,45 50,25 50,5 45,0 25,0 Z"/>
+						</clipPath>
+					</defs>
+					<image clip-path="url(#squircle-clip)" height="100%" width="100%" xlink:href="images/me.jpg"/>
+				</svg>
+				<div id="backbutton"><img src="images/back.svg" alt="Back" title="Back" draggable="false"/></div>
 			</div>
-		</div>
+			<img id="navbar-curve" src="images/navbar_curve.png" alt="curve" draggable="false"/>
+			<div id="name"><h1><a href="http://www.christopherkylehorton.com">Christopher Kyle Horton</a></h1></div>
+		</header>
+		
 		<div id="mainbody">
 			<div id="mainbox">
 				<img id="mainboxicon" src="images/error.svg"></img>
@@ -32,6 +45,8 @@
 				<p> Or maybe I screwed up a link - please <a href="https://github.com/WarriorIng64/WarriorIng64.github.io/issues/new" target="_blank">file an issue report</a> if this is the case. Thanks!</p>
 			</div>
 		</div>
-		<div id="attribution">Copyright &copy; 2014 Christopher Kyle Horton | <a href="https://github.com/WarriorIng64/WarriorIng64.github.io/issues/new" target="_blank">Report a website issue</a></div>
+		
+		<footer>Copyright &copy; 2014-2015 Christopher Kyle Horton | <a href="https://github.com/WarriorIng64/WarriorIng64.github.io/issues/new" target="_blank">Report a website issue</a></footer>
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>

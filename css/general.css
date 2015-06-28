@@ -55,13 +55,13 @@ html {
 }
 
 h1 {
-	font-family: 'Cantarell', sans-serif;
+	font-family: 'Play', sans-serif;
 	font-weight: 400;
 	color: #405bbf;
 }
 
 h2 {
-	font-family: 'Cantarell', sans-serif;
+	font-family: 'Play', sans-serif;
 	font-weight: 400;
 	color: #405bbf;
 }
@@ -190,7 +190,7 @@ code {
 }
 
 #name, #name h1, #name h1 a {
-	font-family: 'Cantarell', sans-serif;
+	font-family: 'Play', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
 	float: center;
@@ -245,7 +245,7 @@ footer {
 	-moz-user-select: none;
 	-o-user-select: none;
 	user-select: none;
-	box-shadow: 0px 0px 5px aqua;
+	box-shadow: 0px 0px 8px aqua;
 	/*
 	-webkit-filter: drop-shadow(0px 0px 5px aqua);
 	-moz-filter: drop-shadow(0px 0px 5px aqua);
@@ -253,6 +253,10 @@ footer {
 	-o-filter: drop-shadow(0px 0px 5px aqua);
 	filter: drop-shadow(0px 0px 5px aqua);
 	*/
+}
+
+footer, footer a {
+	font-family: 'Play', sans-serif;
 }
 
 footer a:link {

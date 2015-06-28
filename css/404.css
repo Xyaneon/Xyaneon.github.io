@@ -1,7 +1,7 @@
 /* Stylesheet for 404 page */
 
 #navbar {
-	margin-top: -100px;
+	/*margin-top: -100px;*/
 }
 
 #mainbody {
@@ -36,5 +36,6 @@ h1, p {
 
 #errortitle {
 	color: #FF0000;
+	font-family: 'Play', sans-serif;
 	opacity: 0.5;
 }
