@@ -24,23 +24,20 @@
 
 
 	<body>
-		<header>
-			<div id="navbar">
-				<div id="navbar-left">
-					<svg id="mypicture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewport="0 0 50 50">
-						<defs>
-							<clipPath id="squircle-clip">
-								<path d="M 25,0 C 5,0 0,5 0,25 0,45 5,50 25,50 45,50 50,45 50,25 50,5 45,0 25,0 Z"/>
-							</clipPath>
-						</defs>
-						<image clip-path="url(#squircle-clip)" height="100%" width="100%" xlink:href="images/me.jpg"/>
-					</svg>
-					<div id="backbutton"><img src="images/back.svg" alt="Back" title="Back" draggable="false"/></div>
-					<div id="name"><h1><a href="http://www.christopherkylehorton.com">Christopher Kyle Horton</a></h1></div>
-				</div>
-				<div id="navbar-center"></div>
+		<header id="navbar">
+			<div id="navbar-left">
+				<svg id="mypicture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewport="0 0 50 50">
+					<defs>
+						<clipPath id="squircle-clip">
+							<path d="M 25,0 C 5,0 0,5 0,25 0,45 5,50 25,50 45,50 50,45 50,25 50,5 45,0 25,0 Z"/>
+						</clipPath>
+					</defs>
+					<image clip-path="url(#squircle-clip)" height="100%" width="100%" xlink:href="images/me.jpg"/>
+				</svg>
+				<div id="backbutton"><img src="images/back.svg" alt="Back" title="Back" draggable="false"/></div>
 			</div>
-			<div id="navbar-right"></div>
+			<img id="navbar-curve" src="images/navbar_curve.png" alt="curve" draggable="false"/>
+			<div id="name"><h1><a href="http://www.christopherkylehorton.com">Christopher Kyle Horton</a></h1></div>
 		</header>
 
 		<div id="mainbody">
@@ -95,6 +92,18 @@
 				<!-- Links -->
 				<div class="categoryheader" id="linkscategory"><img class="categorychevron" src="images/chevron.svg" alt="chevron" draggable="false"/><div class="categoryheadertext">Links</div></div>
 				<div class="categorybuttons" id="linksbuttons">
+					<a href="http://agar.io/" target="_blank">
+					<div class="button">
+						<div class="buttonbkg">
+							<svg width="72" height="72">
+								<use xlink:href="#squircle" fill="#00b7ff" />
+							</svg>
+							<img src="images/buttons/links.svg" alt="Agar.io" draggable="false"/>
+						</div>
+						<br/>Agar.io
+					</div>
+					</a>
+					
 					<a href="http://askubuntu.com/" target="_blank">
 					<div class="button">
 						<div class="buttonbkg">
@@ -410,6 +419,7 @@
 					<h1>Links</h1>
 					<p>This is a list of links to outside things I find interesting in one way or another. It's sort of like me sharing some bookmarks with you.</p>
 					<ul>
+						<li><a href="http://agar.io/" target="_blank">Agar.io</a> &mdash; A fun browser-based MMO game where you control a cell and try to eat other players' cells, while not getting eaten yourself. It kind of reminds me of MyKaryotes, in a way.</li>
 						<li><a href="http://askubuntu.com/" target="_blank">AskUbuntu</a> &mdash; The place to go to if you need Ubuntu support. This site is part of the well-known StackExchange network.</li>
 						<li><a href="https://chocolatey.org/" target="_blank">Chocolatey</a> &mdash; The website for Chocolatey, which is a package manager (think apt-getfor Windows). You can search the gallery for software you can install.</li>
 						<li><a href="https://tcrf.net/The_Cutting_Room_Floor" target="_blank">The Cutting Room Floor</a> &mdash; Everything you didn't know was hidden in the files of your favorite video game.</li>
