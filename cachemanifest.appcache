@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#Last modified: January 15, 2017 3:57 PM
+#Last modified: January 30, 2017 8:30 PM
 
 CACHE:
 index.html
@@ -24,11 +24,11 @@ images/me.jpg
 images/MyKaryotes.png
 images/tile.png
 images/YouTube_light_color_icon.png
-fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf
-fonts/ubuntu-font-family-0.80/Ubuntu-B.ttf
-fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf
-fonts/ubuntu-font-family-0.80/Ubuntu-RI.ttf
-fonts/ubuntu-font-family-0.80/UbuntuMono-R.ttf
+fonts/ubuntu-font-family-0.83/Ubuntu-R.ttf
+fonts/ubuntu-font-family-0.83/Ubuntu-B.ttf
+fonts/ubuntu-font-family-0.83/Ubuntu-L.ttf
+fonts/ubuntu-font-family-0.83/Ubuntu-RI.ttf
+fonts/ubuntu-font-family-0.83/UbuntuMono-R.ttf
 js/index.js
 js/updatecache.js
 
