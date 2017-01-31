@@ -2,29 +2,29 @@
 
 @font-face {
 	font-family: Ubuntu;
-	src: url(../fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf);
+	src: url(../fonts/ubuntu-font-family-0.83/Ubuntu-R.ttf);
 }
 
 @font-face {
 	font-family: Ubuntu;
-	src: url(../fonts/ubuntu-font-family-0.80/Ubuntu-B.ttf);
+	src: url(../fonts/ubuntu-font-family-0.83/Ubuntu-B.ttf);
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: Ubuntu;
-	src: url(../fonts/ubuntu-font-family-0.80/Ubuntu-RI.ttf);
+	src: url(../fonts/ubuntu-font-family-0.83/Ubuntu-RI.ttf);
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Ubuntu Light;
-	src: url(../fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf);
+	src: url(../fonts/ubuntu-font-family-0.83/Ubuntu-L.ttf);
 }
 
 @font-face {
 	font-family: Ubuntu Mono;
-	src: url(../fonts/ubuntu-font-family-0.80/UbuntuMono-R.ttf);
+	src: url(../fonts/ubuntu-font-family-0.83/UbuntuMono-R.ttf);
 }
 
 * {
