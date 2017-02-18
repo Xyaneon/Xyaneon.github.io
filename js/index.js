@@ -80,7 +80,6 @@ $(document).ready(function(){
 		function() {
 			$(".projectbox").slideUp(slidespeed);
 			$("#projectsheader").fadeOut(slidespeed);
-			$("#resumebody").slideUp(slidespeed);
 			$("#aboutme").slideUp(slidespeed);
 			$("#bugfixes").slideUp(slidespeed);
 			$("#links").slideUp(slidespeed);
@@ -102,11 +101,6 @@ $(document).ready(function(){
 	$("#linksbutton").click(
 		function() {
 			openSection("#links", "Links");
-		}
-	);
-	$("#resumebutton").click(
-		function() {
-			openSection("#resumebody", "Résumé");
 		}
 	);
 
