@@ -8,9 +8,11 @@ My personal website. It currently includes:
 - Some basic information about me
 - A list of bugs I fixed in open-source projects
 
-It can be accessed at [www.christopherkylehorton.com][1] in any modern HTML5 browser. Internet Explorer versions previous to 11 are not supported.
+It can be accessed at [https://www.christopherkylehorton.com][1] in any modern
+HTML5 browser. Internet Explorer versions previous to 11 are not supported.
 
-I also have a blog at [blog.christopherkylehorton.com][2], but that's actually hosted on Blogger (for now).
+I also have a blog at [blog.christopherkylehorton.com][2], but that's actually
+hosted on Blogger (for now).
 
-[1]: http://www.christopherkylehorton.com
+[1]: https://www.christopherkylehorton.com
 [2]: http://blog.christopherkylehorton.com
