@@ -59,11 +59,6 @@ $(document).ready(function(){
 			toggleCategory($(this).children(".categorychevron"), "#sectionsbuttons");
 		}
 	);
-	$("#linkscategory").click(
-		function() {
-			toggleCategory($(this).children(".categorychevron"), "#linksbuttons");
-		}
-	);
 	$("#projectscategory").click(
 		function() {
 			toggleCategory($(this).children(".categorychevron"), "#projectsbuttons");
@@ -82,7 +77,6 @@ $(document).ready(function(){
 			$("#projectsheader").fadeOut(slidespeed);
 			$("#aboutme").slideUp(slidespeed);
 			$("#bugfixes").slideUp(slidespeed);
-			$("#links").slideUp(slidespeed);
 			showBackButton(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
@@ -96,11 +90,6 @@ $(document).ready(function(){
 	$("#bugfixesbutton").click(
 		function() {
 			openSection("#bugfixes", "Bug Fixes");
-		}
-	);
-	$("#linksbutton").click(
-		function() {
-			openSection("#links", "Links");
 		}
 	);
 
