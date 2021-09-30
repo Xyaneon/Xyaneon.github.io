@@ -1,16 +1,13 @@
 CACHE MANIFEST
-#Last modified: July 2, 2020 4:44 PM
+#Last modified: September 29, 2021 9:34 PM
 
 CACHE:
 index.html
 css/index.css
 css/general.css
 css/404.css
-images/askubuntu_profile_icon.png
 images/back.svg
 images/buttons/about.svg
-images/buttons/bug.svg
-images/buttons/links.svg
 images/buttons/projects.svg
 images/chevron.svg
 images/error.svg
@@ -20,7 +17,6 @@ images/GxSubOS.png
 images/me.jpg
 images/MyKaryotes.png
 images/tile.png
-images/YouTube_light_color_icon.png
 fonts/ubuntu-font-family-0.83/Ubuntu-R.ttf
 fonts/ubuntu-font-family-0.83/Ubuntu-B.ttf
 fonts/ubuntu-font-family-0.83/Ubuntu-L.ttf

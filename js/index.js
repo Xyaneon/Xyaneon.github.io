@@ -32,16 +32,6 @@ function toggleCategory(target_chevron, target_category_id) {
 	$(target_chevron).toggleClass("rotated");
 }
 
-/*
-function disableScroll() {
-	document.getElementsByTagName('body')[0].style.overflow='hidden';
-}
-
-function enableScroll() {
-	document.getElementsByTagName('body')[0].style.overflow='auto';
-}
-*/
-
 $(document).ready(function(){
 	var slidespeed = 200;
 	var loadinspeed = 400;
@@ -76,7 +66,6 @@ $(document).ready(function(){
 			$(".projectbox").slideUp(slidespeed);
 			$("#projectsheader").fadeOut(slidespeed);
 			$("#aboutme").slideUp(slidespeed);
-			$("#bugfixes").slideUp(slidespeed);
 			showBackButton(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
@@ -85,11 +74,6 @@ $(document).ready(function(){
 	$("#aboutmebutton").click(
 		function() {
 			openSection("#aboutme", "About Me");
-		}
-	);
-	$("#bugfixesbutton").click(
-		function() {
-			openSection("#bugfixes", "Bug Fixes");
 		}
 	);
 
