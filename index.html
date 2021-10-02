@@ -53,130 +53,126 @@
 				<h1>Welcome to my website!</h1>
 
 				<!-- Sections -->
-				<div class="categoryheader" id="sectionscategory"><img class="categorychevron" src="images/chevron.svg" alt="chevron" draggable="false"/><div class="categoryheadertext">Sections</div></div>
-				<div class="categorybuttons" id="sectionsbuttons">
-					<div id="aboutmebutton" class="button">
-						<div class="buttonbkg">
-							<!-- Use the first buttonbkg to define the squircle shape for the rest -->
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72">
-								<defs>
-									<path id="squircle" d="M 36,-3e-5 C 5.1428571,-3e-5 -1.5e-7,5.14283 5.0000003e-8,36.00004 -1.5e-7,66.85724 5.1428571,72.00004 36,72.00004 c 30.857143,0 36,-5.1428 36,-36 C 72,5.14283 66.857143,-3e-5 36,-3e-5 Z"/>
-								</defs>
-								<use xlink:href="#squircle" fill="#3344ee"/>
-							</svg>
-							<img src="images/buttons/about.svg" alt="About" draggable="false"/>
-						</div>
-						<br/>About Me
+				<details>
+					<summary>
+						<img class="categorychevron" src="images/chevron.svg" alt="chevron" draggable="false"/>
+						<h2>About Me</h2>
+					</summary>
+					<div class="section-details-content">
+						<p>
+							As you probably already know, my name is <strong>Christopher Kyle
+							Horton</strong>. I also often go by my traditional username
+							<strong>Xyaneon</strong>.
+						</p>
+						<p>
+							I am a software developer. My favorite programming
+							language is C#, but I currently work as a full-stack
+							developer on a project based on Spring and Angular.
+						</p>
+						<p>
+							I formerly attended the University of Michigan in Ann Arbor, and
+							graduated with my Bachelor's of Science degree in Computer Science
+							(with a Scientific Programming concentration) in December 2015 from
+							Lawrence Technological University in Southfield, MI, and a Master's
+							degree in Computer Science from the same university, with a
+							concentration in Intelligent Systems, in May 2020.
+						</p>
+						<h2>About This Site</h2>
+						<p>
+							This is my hand-crafted personal website. You can read the full
+							details about it in my Personal Projects page.
+						</p>
 					</div>
-				</div>
+				</details>
 
-				<!-- Projects -->
-				<div class="categoryheader" id="projectscategory"><img class="categorychevron" src="images/chevron.svg" alt="chevron" draggable="false"/><div class="categoryheadertext">Projects</div></div>
-				<div class="categorybuttons" id="projectsbuttons">
-					<div id="websiteprojectbutton" class="button projectbutton">
-						<div class="buttonbkg">
-							<svg width="72" height="72">
-								<use xlink:href="#squircle" fill="#00aa00" />
-							</svg>
-							<img src="images/buttons/projects.svg" alt="This website" draggable="false"/>
+				<details>
+					<summary>
+						<img class="categorychevron" src="images/chevron.svg" alt="chevron" draggable="false"/>
+						<h2>Projects</h2>
+					</summary>
+					<div class="section-details-content">
+						<div class="category-buttons">
+							<div id="websiteprojectbutton" class="button projectbutton">
+								<div class="buttonbkg">
+									<!-- Use the first buttonbkg to define the squircle shape for the rest -->
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72">
+										<defs>
+											<path id="squircle" d="M 36,-3e-5 C 5.1428571,-3e-5 -1.5e-7,5.14283 5.0000003e-8,36.00004 -1.5e-7,66.85724 5.1428571,72.00004 36,72.00004 c 30.857143,0 36,-5.1428 36,-36 C 72,5.14283 66.857143,-3e-5 36,-3e-5 Z"/>
+										</defs>
+										<use xlink:href="#squircle" fill="#3344ee"/>
+									</svg>
+									<img src="images/buttons/projects.svg" alt="This website" draggable="false"/>
+								</div>
+								<br/>This website
+							</div>
+		
+							<div id="chocolateypackagesprojectbutton" class="button projectbutton">
+								<div class="buttonbkg">
+									<svg width="72" height="72">
+										<use xlink:href="#squircle" fill="#00aa00" />
+									</svg>
+									<img src="images/buttons/projects.svg" alt="Chocolatey packages" draggable="false"/>
+								</div>
+								<br/>Chocolatey packages
+							</div>
+		
+							<div id="gxsubosprojectbutton" class="button projectbutton">
+								<div class="buttonbkg">
+									<svg width="72" height="72">
+										<use xlink:href="#squircle" fill="#00aa00" />
+									</svg>
+									<img src="images/buttons/projects.svg" alt="GxSubOS" draggable="false"/>
+								</div>
+								<br/>GxSubOS
+							</div>
+		
+							<div id="grivedaemonprojectbutton" class="button projectbutton">
+								<div class="buttonbkg">
+									<svg width="72" height="72">
+										<use xlink:href="#squircle" fill="#00aa00" />
+									</svg>
+									<img src="images/buttons/projects.svg" alt="grive-daemon" draggable="false"/>
+								</div>
+								<br/>grive-daemon
+							</div>
+		
+							<div id="mykaryotesprojectbutton" class="button projectbutton">
+								<div class="buttonbkg">
+									<svg width="72" height="72">
+										<use xlink:href="#squircle" fill="#00aa00" />
+									</svg>
+									<img src="images/buttons/projects.svg" alt="MyKaryotes" draggable="false"/>
+								</div>
+								<br/>MyKaryotes
+							</div>
 						</div>
-						<br/>This website
 					</div>
+				</details>
 
-					<div id="chocolateypackagesprojectbutton" class="button projectbutton">
-						<div class="buttonbkg">
-							<svg width="72" height="72">
-								<use xlink:href="#squircle" fill="#00aa00" />
-							</svg>
-							<img src="images/buttons/projects.svg" alt="Chocolatey packages" draggable="false"/>
+				<details>
+					<summary>
+						<img class="categorychevron" src="images/chevron.svg" alt="chevron" draggable="false"/>
+						<h2>Profiles</h2>
+					</summary>
+					<div class="section-details-content">
+						<div class="category-buttons">
+							<a href="https://github.com/Xyaneon" target="_blank">
+								<div id="githubbutton" class="button">
+									<div class="buttonbkg">
+										<svg width="72" height="72">
+											<use xlink:href="#squircle" fill="#24292e" />
+										</svg>
+										<img src="images/GitHub-Mark-Light-120px-plus.png" alt="GitHub" draggable="false"/>
+									</div>
+									<br/>GitHub
+								</div>
+							</a>
 						</div>
-						<br/>Chocolatey packages
 					</div>
-
-					<div id="gxsubosprojectbutton" class="button projectbutton">
-						<div class="buttonbkg">
-							<svg width="72" height="72">
-								<use xlink:href="#squircle" fill="#00aa00" />
-							</svg>
-							<img src="images/buttons/projects.svg" alt="GxSubOS" draggable="false"/>
-						</div>
-						<br/>GxSubOS
-					</div>
-
-					<div id="grivedaemonprojectbutton" class="button projectbutton">
-						<div class="buttonbkg">
-							<svg width="72" height="72">
-								<use xlink:href="#squircle" fill="#00aa00" />
-							</svg>
-							<img src="images/buttons/projects.svg" alt="grive-daemon" draggable="false"/>
-						</div>
-						<br/>grive-daemon
-					</div>
-
-					<div id="mykaryotesprojectbutton" class="button projectbutton">
-						<div class="buttonbkg">
-							<svg width="72" height="72">
-								<use xlink:href="#squircle" fill="#00aa00" />
-							</svg>
-							<img src="images/buttons/projects.svg" alt="MyKaryotes" draggable="false"/>
-						</div>
-						<br/>MyKaryotes
-					</div>
-				</div>
-
-				<!-- Profiles -->
-				<div class="categoryheader" id="profilescategory"><img class="categorychevron" src="images/chevron.svg" alt="chevron" draggable="false"/><div class="categoryheadertext">Profiles</div></div>
-				<div class="categorybuttons" id="profilesbuttons">
-					<a href="https://github.com/Xyaneon" target="_blank">
-					<div id="githubbutton" class="button">
-						<div class="buttonbkg">
-							<svg width="72" height="72">
-								<use xlink:href="#squircle" fill="#24292e" />
-							</svg>
-							<img src="images/GitHub-Mark-Light-120px-plus.png" alt="GitHub" draggable="false"/>
-						</div>
-						<br/>GitHub
-					</div>
-					</a>
-				</div>
+				</details>
 			</div>
 
 			<div id="mainbox">
-				<div id="projectsheader">
-					<p>I have worked on a large number of personal projects. This page shows them all off with screenshots, summaries and links.</p>
-					<p>Click any section to expand it and read more about it.</p>
-				</div>
-				<span style="clear: both"></span>
-
-				<div id="aboutme">
-					<h1>About Me</h1>
-					<p>
-						As you probably already know, my name is <strong>Christopher Kyle
-						Horton</strong>. I also often go by my traditional username
-						<strong>Xyaneon</strong>.
-					</p>
-					<p>
-						I am a software developer. My favorite programming
-						language is C#, but I currently work as a full-stack
-						developer on a project based on Spring and Angular.
-					</p>
-					<p>
-						I formerly attended the University of Michigan in Ann Arbor, and
-						graduated with my Bachelor's of Science degree in Computer Science
-						(with a Scientific Programming concentration) in December 2015 from
-						Lawrence Technological University in Southfield, MI, and a Master's
-						degree in Computer Science from the same university, with a
-						concentration in Intelligent Systems, in May 2020.
-					</p>
-					<h2>About This Site</h2>
-					<p>
-						This is my hand-crafted personal website. You can read the full
-						details about it in my Personal Projects page.
-					</p>
-				</div>
-
-				<span style="clear: both"></span>
-
 				<div class="projectbox" id="websiteprojectbox">
 					<h1>This Website</h1>
 					<span style="clear: both"></span>
