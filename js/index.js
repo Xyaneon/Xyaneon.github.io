@@ -20,7 +20,6 @@ $(document).ready(function(){
 	var slidespeed = 200;
 	var loadinspeed = 400;
 	$("#backbutton").animate({width: 'toggle'}, {duration: 0});
-	$("#navbar").animate({"top" : "0px"}, loadinspeed);
 	$("footer").slideDown(loadinspeed);
 	$("#homescreen").delay(loadinspeed).fadeIn(loadinspeed)
 	$("#homescreen > details").each(function(index) {
