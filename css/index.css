@@ -97,6 +97,19 @@ details summary > * {
 	text-shadow: 0px 0px 2px aqua;
 }
 
+@keyframes opendetails {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+details[open] .section-details-content {
+	animation: opendetails 0.5s ease-in-out;
+}
+
 #homescreen details[open] {
 	background: rgba(0, 0, 0, 0.75);
 	border-radius: 16px;
