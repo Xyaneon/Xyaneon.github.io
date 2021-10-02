@@ -10,7 +10,7 @@ function prepareForSection() {
 	$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 }
 
-function openProjectButton(project_box_id, project_name) {
+function openProjectButton(project_box_id) {
 	var slidespeed = 200;
 	prepareForSection();
 	$(project_box_id).delay(slidespeed * 2).slideDown(slidespeed);
@@ -23,7 +23,7 @@ $(document).ready(function(){
 	$("#navbar").animate({"top" : "0px"}, loadinspeed);
 	$("footer").slideDown(loadinspeed);
 	$("#homescreen").delay(loadinspeed).fadeIn(loadinspeed)
-	$(".categoryheader").each(function(index) {
+	$("#homescreen > details").each(function(index) {
 		$(this).delay((loadinspeed / 2.0) * index + loadinspeed).fadeIn(loadinspeed * 2.0);
 	});
 
@@ -31,7 +31,6 @@ $(document).ready(function(){
 	$("#backbutton").click(
 		function() {
 			$(".projectbox").slideUp(slidespeed);
-			$("#projectsheader").fadeOut(slidespeed);
 			showBackButton(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
@@ -42,19 +41,19 @@ $(document).ready(function(){
 		function() {
 			switch (this.id) {
 				case "websiteprojectbutton":
-					openProjectButton("#websiteprojectbox", "Website");
+					openProjectButton("#websiteprojectbox");
 					break;
 				case "chocolateypackagesprojectbutton":
-					openProjectButton("#chocolateypackagesprojectbox", "Chocolatey packages");
+					openProjectButton("#chocolateypackagesprojectbox");
 					break;
 				case "gxsubosprojectbutton":
-					openProjectButton("#gxsubosprojectbox", "GxSubOS");
+					openProjectButton("#gxsubosprojectbox");
 					break;
 				case "grivedaemonprojectbutton":
-					openProjectButton("#grivedaemonprojectbox", "grive-daemon");
+					openProjectButton("#grivedaemonprojectbox");
 					break;
 				case "mykaryotesprojectbutton":
-					openProjectButton("#mykaryotesprojectbox", "MyKaryotes");
+					openProjectButton("#mykaryotesprojectbox");
 					break;
 			}
 		}

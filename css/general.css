@@ -68,14 +68,14 @@ h2 {
 
 a:link {
 	text-shadow: none;
-	color: #aaaaaa;
+	color: #bbbbbb;
 	transition-property: color, text-shadow;
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
 }
 
 a:visited {
-	color: #aaaaaa;
+	color: #bbbbbb;
 }
 
 a:hover {
@@ -84,7 +84,7 @@ a:hover {
 }
 
 ul, ol, li {
-	color: #aaaaaa;
+	color: #bbbbbb;
 }
 
 code {

@@ -1,5 +1,3 @@
-/* Stylesheet for Christopher Kyle Horton's main page */
-
 #mainbody {
 	min-width: 300px;
 	margin: 0px auto 32px auto;
@@ -7,7 +5,7 @@
 }
 
 #mainbox {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.75);
 	border-radius: 16px;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.0);
 	display: none;
@@ -54,6 +52,7 @@
 
 details {
 	border-radius: 16px;
+	margin-bottom: 0.75em;
 }
 
 details summary::marker {
@@ -66,6 +65,15 @@ details summary > * {
 	cursor: pointer;
 }
 
+#homescreen > details {
+	display: none;
+}
+
+#homescreen details summary {
+	border: 1px solid transparent;
+	border-radius: 16px;
+}
+
 #homescreen details summary:hover {
 	background: rgba(0, 255, 255, 0.25);
 	border: 1px solid aqua;
@@ -76,7 +84,7 @@ details summary > * {
 
 	transition-property: background, border, box-shadow, text-shadow;
 	transition-duration: 0.2s;
-	transition-timing-function: linear;
+	transition-timing-function: ease-in-out;
 }
 
 #homescreen details[open] summary:hover {
@@ -87,17 +95,17 @@ details summary > * {
 	color: white;
 	box-shadow: 0px 0px 3px rgba(0, 255, 255, 0.8);
 	text-shadow: 0px 0px 2px aqua;
-	/* max-width: 700px; */
 }
 
 #homescreen details[open] {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.75);
 	border-radius: 16px;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.0);
 }
 
 #homescreen details > summary > img {
 	margin-left: 0.5em;
+	margin-right: 0.5em;
 	transform: rotate(0);
 }
 
@@ -106,12 +114,9 @@ details summary > * {
 }
 
 #homescreen details[open] .section-details-content {
-	background: rgba(0, 0, 0, 0.8);
-	border-radius: 16px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.0);
 	padding: 20px 70px 20px 70px;
 	margin: 0px auto;
-	/* max-width: 700px; */
+	max-width: 700px;
 }
 
 #homescreen>h1, #homescreen summary>h2 {
@@ -132,7 +137,7 @@ details summary > * {
 }
 
 h1, p {
-	color: #aaaaaa;
+	color: #bbbbbb;
 	text-align: center;
 }
 
@@ -224,43 +229,11 @@ h1, p {
 	filter: drop-shadow(0px 0px 0.25rem white);
 }
 
-.categorybuttons {
+.category-buttons {
 	overflow: auto;
 	background: rgba(0, 0, 0, 0.25);
 	border-radius: 1rem;
-	box-shadow: 0px 0.15rem 0.5rem rgba(0, 0, 0, 0.5) inset;
-	display: none;
-}
-
-.category-buttons {
-	overflow: auto;
-	/* background: rgba(0, 0, 0, 0.25);
-	border-radius: 1rem;
-	box-shadow: 0px 0.15rem 0.5rem rgba(0, 0, 0, 0.5) inset; */
-}
-
-.categoryheader {
-	background: none;
-	border-radius: 0.25em;
-	width: 100%;
-	padding: 0.25em;
-	transition-property: background;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
-	display: none;
-}
-
-.categoryheader:hover {
-	background: rgba(0, 255, 255, 0.25);
-}
-
-.categoryheadertext {
-	text-align: left;
-	font-family: 'Play', sans-serif;
-	font-weight: 400;
-	font-size: 2em;
-	text-shadow: 0px 0px 3px black;
-	color: white;
+	box-shadow: 0px 0.15rem 0.5rem rgba(0, 0, 0, 0.75) inset;
 }
 
 img.categorychevron {
@@ -276,38 +249,26 @@ img.categorychevron {
 	transition: transform 0.2s ease-out 0.0s;
 }
 
-.rotated {
-	-ms-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-
 /* Some formatting for specific sections */
 
 #aboutme {
 	display: none;
-	color: #aaaaaa;
+	color: #bbbbbb;
 }
 
 #aboutme p {
-	color: #aaaaaa;
+	color: #bbbbbb;
 	text-align: left;
 }
 
 #aboutme h1, #aboutme h2 {
 	font-family: 'Play', sans-serif;
 	font-weight: 400;
-	color: #aaaaaa;
+	color: #bbbbbb;
 	text-align: center;
 }
 
 /* Personal Projects */
-
-#projectsheader {
-	display: none;
-}
 
 .projectbox {
 	display: none;
@@ -325,7 +286,7 @@ div.picture > img {
 }
 
 h1, h2, p {
-	color: #aaaaaa;
+	color: #bbbbbb;
 }
 
 div.description h2 {
@@ -334,10 +295,4 @@ div.description h2 {
 
 div.description li {
 	text-align: left;
-}
-
-#backgroundthumbnail {
-	width: 50%;
-	height: 50%;
-	border-radius: 8px;
 }
