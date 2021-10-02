@@ -65,15 +65,9 @@ $(document).ready(function(){
 		function() {
 			$(".projectbox").slideUp(slidespeed);
 			$("#projectsheader").fadeOut(slidespeed);
-			$("#aboutme").slideUp(slidespeed);
 			showBackButton(slidespeed);
 			$("#mainbox").fadeOut(slidespeed);
 			$("#homescreen").delay(slidespeed).fadeIn(slidespeed);
-		}
-	);
-	$("#aboutmebutton").click(
-		function() {
-			openSection("#aboutme", "About Me");
 		}
 	);
 
