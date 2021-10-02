@@ -10,26 +10,10 @@ function prepareForSection() {
 	$("#mainbox").delay(slidespeed).fadeIn(slidespeed);
 }
 
-function openSection(section_id, section_name) {
-	var slidespeed = 200;
-	prepareForSection();
-	$(section_id).delay(slidespeed * 2).slideDown(slidespeed);
-}
-
 function openProjectButton(project_box_id, project_name) {
 	var slidespeed = 200;
 	prepareForSection();
 	$(project_box_id).delay(slidespeed * 2).slideDown(slidespeed);
-}
-
-function toggleCategory(target_chevron, target_category_id) {
-	var slidespeed = 200;
-	$(".categorybuttons").not(target_category_id).each(function() {
-		$(this).slideUp(slidespeed);
-	});
-	$(".categorychevron").not(target_chevron).removeClass("rotated");
-	$(target_category_id).slideToggle(slidespeed);
-	$(target_chevron).toggleClass("rotated");
 }
 
 $(document).ready(function(){
@@ -42,23 +26,6 @@ $(document).ready(function(){
 	$(".categoryheader").each(function(index) {
 		$(this).delay((loadinspeed / 2.0) * index + loadinspeed).fadeIn(loadinspeed * 2.0);
 	});
-
-	// Category headers actions
-	$("#sectionscategory").click(
-		function() {
-			toggleCategory($(this).children(".categorychevron"), "#sectionsbuttons");
-		}
-	);
-	$("#projectscategory").click(
-		function() {
-			toggleCategory($(this).children(".categorychevron"), "#projectsbuttons");
-		}
-	);
-	$("#profilescategory").click(
-		function() {
-			toggleCategory($(this).children(".categorychevron"), "#profilesbuttons");
-		}
-	);
 
 	// Buttons actions
 	$("#backbutton").click(
