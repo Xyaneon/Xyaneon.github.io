@@ -92,7 +92,17 @@ code {
 	color: aqua;
 }
 
+@keyframes slide-in-from-top {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(100%);
+	}
+}
+
 #navbar {
+	animation: slide-in-from-top 0.5s ease-in-out 0s 1 normal both;
 	margin: 0px 0px auto 0px;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -100,7 +110,7 @@ code {
 	text-align: center;
 	left: 0px;
 	right: 0px;
-	top: -32px;
+	top: -33px;
 	height: 33px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -225,7 +235,17 @@ code {
 	}
 }
 
+@keyframes slide-in-from-bottom {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0%);
+	}
+}
+
 footer {
+	animation: slide-in-from-bottom 0.5s ease-in-out 0s 1 normal both;
 	margin: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -239,7 +259,6 @@ footer {
 	font-size: 11px;
 	color: aqua;
 	text-align: center;
-	display: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
