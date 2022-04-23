@@ -151,54 +151,6 @@ code {
 	padding: 0px;
 }
 
-#backbutton {
-	color: white;
-	background: rgba(0, 0, 0, 0.8);
-	width: 50px;
-	height: 50px;
-	float: left;
-	margin-top: 7px;
-	margin-left: 7px;
-	padding: 0px;
-	border-radius: 10px;
-	box-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8) inset;
-	transition-property: box-shadow;
-	transition-duration: 0.2s;
-	transition-timing-function: linear;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
-
-#backbutton img {
-	width: 100%;
-	height: 100%;
-	vertical-align: middle;
-	transition-property: -webkit-filter, -moz-filter, -ms-filter, -o-filter, filter, transform;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
-
-#backbutton:hover {
-	box-shadow: 0px 0px 8px rgba(0, 255, 255, 1) inset;
-}
-
-#backbutton:active img {
-	transform: scale(0.95);
-	-webkit-filter: drop-shadow(0px 0px 6px aqua);
-	-moz-filter: drop-shadow(0px 0px 6px aqua);
-	-ms-filter: drop-shadow(0px 0px 6px aqua);
-	-o-filter: drop-shadow(0px 0px 6px aqua);
-	filter: drop-shadow(0px 0px 6px aqua);
-}
-
 #name, #name h1, #name h1 a {
 	font-family: 'Play', sans-serif;
 	font-weight: 400;
@@ -265,13 +217,6 @@ footer {
 	-o-user-select: none;
 	user-select: none;
 	box-shadow: 0px 0px 8px aqua;
-	/*
-	-webkit-filter: drop-shadow(0px 0px 5px aqua);
-	-moz-filter: drop-shadow(0px 0px 5px aqua);
-	-ms-filter: drop-shadow(0px 0px 5px aqua);
-	-o-filter: drop-shadow(0px 0px 5px aqua);
-	filter: drop-shadow(0px 0px 5px aqua);
-	*/
 }
 
 footer, footer a {
